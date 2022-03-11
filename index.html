@@ -24,16 +24,13 @@
 <ul class="navigation-user">
   <li class="navigation-item">
     <a class="navigation-link" href="#"> 
-      <span> class="visually-hidden">
-        Поиск
-      </span>
+      <span class="visually-hidden"> Поиск </span>
     </a>
   </li>
   <li class="navigation-item">
     <a class="navigation-link" href="#"> 
-      <span> class="visually-hidden">
-      Избранное
-    </span>
+      <span class="visually-hidden"> Избранное </span>
+      
   </a>
   </li>
    <li class="navigation-item">
@@ -108,12 +105,84 @@
                             </li>   
        </ul>
     </section>
-    
-  </article>
-</header>
+    <section class="search-hotel">
+      <header class="search-hidden">
+        <h5 class="visually-hidden"> Поиск гостиниц в Седоне</h5>
+        <p class="serch-question">Заинтересовались?</p>
+        <p class="search-date">Укажите предполагаемые даты поездки,
+          и мы покажем вам лучшие предложения гостиниц в Седоне   </p>
+          <a class="button button search" href="#">Поиск гостиниц в Седоне</a>
+      </header>
+    </section>
+    <div class="offer-form">
+      <form method="post" action="/search">
+          <div class="offer-form-dates">
+              <div class="offer-form-row clearfix">
+                  <label class="offer-form-label" for="offer-arrive-date">Дата заезда:</label>
+                  <input type="date" id="offer-arrive-date" required>
+              </div>
+              <div class="offer-form-row clearfix">
+                  <label class="offer-form-label" for="offer-departure-date">Дата выезда:</label>
+                  <input type="date" id="offer-departure-date" required>
+              </div>
+          </div>
+          <div class="offer-form-row clearfix">
+              <div class="offer-form-col offer-col-adult clearfix">
+                  <label class="offer-form-label" for="offer-audit-adult">Взрослых:</label>
+                  <input type="text" id="offer-audit-adult" value="2" required>
+                  <a class="offer-controls-subtract" href="#"></a>
+                  <a class="offer-controls-add" href="#"></a>
+              </div>
+              <div class="offer-form-col offer-col-junior clearfix">
+                  <label class="offer-form-label" for="offer-audit-junior">Детей:</label>
+                  <input type="text" id="offer-audit-junior" value="1" required>
+                  <a class="offer-controls-subtract" href="#"></a>
+                  <a class="offer-controls-add" href="#"></a>
+              </div>
+          </div>
+          <button class="offer-form-btn" type="submit">Найти</button>
+      </form>
+  </div>
+</div>
+</div>
+<section class="subscription">
+  <header class="subscription-mail">
+    <h6 class="visually-hidden"> Подпишитесь на рассылку</h6>
+    <p class="serch-question">Подпишитесь на рассылку</p>
+    <p class="search-date">Только полезная информация и никакого спама,
+      честное бойскаутское!   </p>
+      
+    <form class="email-form" action="https://echo.htmlacademy.ru/" method="post">
+    <label for="newsletter-email">Email</label>
+    <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+    <button class="button newsletter-button" href="#" type="sumbit">
+        <span class="button-follow">Подписаться</span>
+    </button>
+</form>
+</section>
+    </header> 
+    <footer class="page-footer">
+        <section class="footer-social">
+            <h6 class="vissualy-hidden">Социальные сети</h6>
+            <a class="footer-social-btn footer-social-twitter" href="#"></a>
+            <a class="footer-social-btn footer-social-facebook" href="#"></a>
+            <a class="footer-social-btn footer-social-youtube" href="#"></a>
+        </section>
+        <section class="footer-contacts">
+            <h6 class="vissualy-hidden">Контакты</h6>
+            <a class="contacts-phone" href="tel:+78128121212"> +7 (812) 812-12-12</a>
+        </section>
+        <section class="footer-academy">
+            <h6 class="vissualy-hidden">HTML academy</h6>
+            <span class="footer-copyright-introduction">for</span>
+            <a class="footer-copyright-htmlacademy" href="#"></a>
+        </section>
+    </footer>
+  </section>
 </main>
 
    
 
   </body>
 </html>
+
